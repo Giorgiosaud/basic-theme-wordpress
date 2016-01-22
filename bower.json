@@ -1,0 +1,23 @@
+{
+  "name": "tax",
+  "description": "Tax Website",
+  "main": "",
+  "authors": [
+    "Giorgiosaud <jorgelsaud@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "homepage": "www.tax.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ]
+}

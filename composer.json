@@ -1,0 +1,23 @@
+{
+    "name": "jorgelsaud/tax",
+    "description": "Tax Theme",
+    "type": "web",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Giorgiosaud",
+            "email": "jorgelsaud@gmail.com"
+        }
+    ],
+    "require": {
+        "tgmpa/tgm-plugin-activation": "^2.5"
+    },
+    "autoload":{
+        "psr-4": {
+            "WordpressBase\\": "App/"
+        },
+        "files":[
+            "App/helpers.php"
+        ]
+    }
+}

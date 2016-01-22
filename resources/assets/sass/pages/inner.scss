@@ -1,0 +1,21 @@
+section.InnerPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.InnerPage__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10em;
+    background: $main-custom-color;
+    font-weight: bold;
+    color: white;
+    h1{
+        font-weight: bold;
+        color: white;
+    }
+}
+.InnerPage__content {
+    padding: 2em;
+}

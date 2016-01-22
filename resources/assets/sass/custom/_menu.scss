@@ -1,0 +1,46 @@
+.Brand--image {
+	height: 100%;
+}
+.navbar-brand {
+	padding: 5px 15px;
+}
+.navbar{
+	margin-bottom: 0;
+}
+.NormalMenu{
+	li{
+		border-right:solid $main-custom-color 2px
+	}
+}
+.navbar-custom{
+	.navbar-nav{
+		.active{
+			a{
+				color:#FFF;
+				background-color: $main-custom-color;
+				&:hover{
+					color:#FFF;
+					background-color: $main-custom-color;
+				}
+				&:focus{
+					color:#FFF;
+					background-color: $main-custom-color;
+				}
+			}
+		}
+		li{
+			a{
+				color:$main-custom-color;
+				&:hover{
+					color:#FFF;
+					background-color: lighten($main-custom-color,5%);
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px){
+	.SocialNetworks{
+		margin-left: 3em;
+	}
+}
