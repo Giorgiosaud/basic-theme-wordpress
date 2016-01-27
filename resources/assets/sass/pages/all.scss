@@ -5,6 +5,7 @@ html,body,.wrapper{
 	height: 100%;
 }
 .backGroundColor {
+    padding-top: 60px;
     background: rgba(255,255,255,0.01);
     background: -moz-linear-gradient(top, rgba(255,255,255,0.01) 0%, rgba(250,250,250,1) 40%, rgba(242,242,242,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.01)), color-stop(40%, rgba(250,250,250,1)), color-stop(100%, rgba(242,242,242,1)));

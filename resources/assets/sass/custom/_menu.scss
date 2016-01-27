@@ -3,16 +3,24 @@
 }
 .navbar-brand {
 	padding: 5px 15px;
+	height: 60px;
 }
+
 .navbar{
 	margin-bottom: 0;
 }
+
 .NormalMenu{
 	li{
 		border-right:solid $main-custom-color 2px
 	}
 }
 .navbar-custom{
+    box-shadow: black 0px 0px 10px 0px;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    border:none;
 	.navbar-nav{
 		.active{
 			a{
@@ -30,6 +38,7 @@
 		}
 		li{
 			a{
+				line-height: 30px;
 				color:$main-custom-color;
 				&:hover{
 					color:#FFF;

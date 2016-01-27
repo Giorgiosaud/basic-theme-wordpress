@@ -14,8 +14,8 @@ use WordpressBase\ThemeSupport\CustomBackground;
 class Initializer{
 	private $clasesAInicializar=array(
 		// Equipo::class=>array(),
-		RequestedPlugins::class=>array(),
-		Logo::class=>array(
+		'WordpressBase\Plugins\RequestedPlugins'=>array(),
+		'WordpressBase\ThemeSupport\Logo'=>array(
 			'default-image'          => '/img/logo.png',
 			// 'width'                  => 0,
 			// 'height'                 => 0,
@@ -41,17 +41,17 @@ class Initializer{
 			// 'chat',
 		// ),
 		// PostThumbnails::class=>array(),
-		CustomBackground::class=>array(
+		'WordpressBase\ThemeSupport\CustomBackground'=>array(
 			// 'default-color'          => '',
 			// 'default-image'          => '',
 			// 'wp-head-callback'       => '_custom_background_cb',
 			// 'admin-head-callback'    => '',
 			// 'admin-preview-callback' => ''
 			),
-		Menus::class=>array(
+		'WordpressBase\Menus\Menus'=>array(
 			'header-menu'=>'Menu Cabecera',
 			),
-		Scripts::class=>array(
+		'WordpressBase\Scripts\Scripts'=>array(
             array(
                 'tagName'=>'alljs', 
                 'src'=>'/compiled/js/all.js', 
@@ -60,7 +60,7 @@ class Initializer{
                 'cdn'=>false,
                 ),
             ),
-        Styles::class=>array(
+        'WordpressBase\Styles\Styles'=>array(
             array(
                 'tagName'=>'allcss', 
                 'src'=>'/compiled/css/all.css', 
@@ -75,7 +75,7 @@ class Initializer{
             	'cdn'=>true
             	),
             ),
-        Sizes::class=>array(
+        'WordpressBase\Sizes\Sizes'=>array(
         	array(
         		'name'=>'slider',
         		'XWidth'=>1900,
