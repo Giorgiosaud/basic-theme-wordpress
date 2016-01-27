@@ -10,29 +10,32 @@
 
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php the_content(); ?>
-				<div class="formulario">
-					<form action="sendEmail" method="POST" role="form" class="ajaxSend" data-action="sendEmail">
-
-						<div class="form-group col-xs-12 col-sm-6">
-							<label for="">Name</label>
-							<input type="text" name="name" class="form-control" id="" placeholder="Peter Example">
-						</div>
-						<div class="form-group col-xs-12 col-sm-6">
-							<label for="">Email</label>
-							<input type="email" name="email" class="form-control" id="" placeholder="example@test.com">
-						</div>
-						<div class="form-group col-xs-12">
-							<textarea name="message" id="inputMessage" class="form-control" rows="3" required="required"></textarea>					
-						</div>
-						<div class="form-group col-xs-12">
-							<button type="submit" class="btn btn-primary">Submit</button>
-						</div>
-					</form>
+			<div class="col-xs-12 col-sm-6">
+					<?php the_content(); ?>
 				</div>
-				<div class="clearfix"></div>
-				<div class="alert Emailstatus" role="alert">...</div>
-				
+				<div class="col-xs-12 col-sm-6">
+					<div class="formulario">
+						<form action="sendEmail" method="POST" role="form" class="ajaxSend" data-action="sendEmail">
+
+							<div class="form-group col-xs-12 col-sm-6">
+								<label for="">Name</label>
+								<input type="text" name="name" class="form-control" id="" placeholder="Peter Example">
+							</div>
+							<div class="form-group col-xs-12 col-sm-6">
+								<label for="">Email</label>
+								<input type="email" name="email" class="form-control" id="" placeholder="example@test.com">
+							</div>
+							<div class="form-group col-xs-12">
+								<textarea name="message" id="inputMessage" class="form-control" rows="3" required="required"></textarea>					
+							</div>
+							<div class="form-group col-xs-12">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</form>
+					</div>
+					<div class="clearfix"></div>
+					<div class="alert Emailstatus" role="alert">...</div>
+				</div>
 
 				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
