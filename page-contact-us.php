@@ -10,10 +10,10 @@
 
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12 col-sm-5">
 					<?php the_content(); ?>
 				</div>
-				<div class="col-xs-12 col-sm-6">
+				<div class="col-xs-12 col-sm-7">
 					<div class="formulario">
 						<form action="sendEmail" method="POST" role="form" class="ajaxSend" data-action="sendEmail">
 
