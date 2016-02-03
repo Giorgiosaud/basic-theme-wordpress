@@ -468,7 +468,8 @@ add_shortcode('CustomMessage', 'CustomMessage'); // You can place [html5_shortco
             $return.=get_the_title();
             $return.="</div>";
             $return.="<div class='Card__content'>";
-            $return.=get_the_content();
+            $content=get_the_content();
+	    $return.=apply_filters('the_content', $content);
             $return.="</div>";
             
             $return.="</div>";
@@ -511,7 +512,9 @@ add_shortcode('CustomMessage', 'CustomMessage'); // You can place [html5_shortco
             $return.=get_the_excerpt();
             $return.="</div>";
             $permalink=get_the_permalink();
-            $return.="<div class='Card__link'><a class='Card__btn btn btn-default' href={$permalink}>See More</a></div>";
+	    $vermas='{:es}Ver Más{:}{:en}See More{:}';
+	    $vermasTraducido=apply_filters('the_content', $vermas);
+            $return.="<div class='Card__link'><a class='Card__btn btn btn-default' href={$permalink}>".$vermasTraducido."</a></div>";
             
             $return.="</div>";
             endwhile;

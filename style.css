@@ -9,3 +9,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: Tax, Zonapro, Green
 Text Domain: Tax, Zonapro, Green
 */
+.Card__content{
+flex-direction:column;
+}
