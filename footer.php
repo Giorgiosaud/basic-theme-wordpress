@@ -20,6 +20,11 @@
 		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
 		ga('send', 'pageview');
 		</script>
-
+		<script>
+		$( document ).ready(function() {
+			$('.toogler').click(function(){$(this).siblings('.sub-menu').slideToggle()});
+			$('.editMeHelper').hide();
+		});
+		</script>
 	</body>
 </html>

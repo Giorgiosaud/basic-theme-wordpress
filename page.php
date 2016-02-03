@@ -41,6 +41,6 @@
 	</main>
 
 <?php 
-// get_sidebar(); ?>
+get_sidebar('widget-area-1'); ?>
 
 <?php get_footer(); ?>

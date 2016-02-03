@@ -12,3 +12,31 @@ Text Domain: Tax, Zonapro, Green
 .Card__content{
 flex-direction:column;
 }
+.toogler{
+	color: #539028;
+	line-height: 80px;
+	font-size:1.3em;
+	margin:0 0.5em;
+}
+.navbar-custom .navbar-nav li a{
+	float:left;
+}
+.sub-menu{
+	list-style:none;
+	display:none;
+}
+.search{
+display:none;
+}
+.editMeHelper{
+display:none !important;
+}
+.sidebar-widget{
+text-align:center;
+}
+.navbar-brand{
+height:80px
+}
+.navbar-custom .navbar-nav li a{
+line-height:50px
+}

@@ -8,7 +8,7 @@ class WalkerBootstrap extends Walker_Nav_Menu
     public function start_lvl(&$output, $depth = 0, $args = array())
     {
         $indent = str_repeat("\t", $depth);
-        $output .= "\n$indent<ul class=\"sub-menu\">\n";
+        $output .= "\n$indent<i class='fa fa-plus-circle toogler'></i><ul class=\"sub-menu\">\n";
     }
     public function end_lvl(&$output, $depth = 0, $args = array())
     {
