@@ -393,7 +393,8 @@ remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altoget
 add_shortcode('ourCompany', 'ourCompany'); // You can place [html5_shortcode_demo] in Pages, Posts now.
 add_shortcode('ourServices', 'ourServices'); // Place [html5_shortcode_demo_2] in Pages, Posts now.
 add_shortcode('CustomMessage', 'CustomMessage'); // You can place [html5_shortcode_demo] in Pages, Posts now.
-
+add_shortcode('ImageThird','ImageThird'); // You can place [html5_shortcode_demo] in Pages, Posts now.
+add_shortcode('ImageContainer','ImageContainer'); // You can place [html5_shortcode_demo] in Pages, Posts now.
 // Shortcodes above would be nested like this -
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
 
@@ -530,6 +531,16 @@ function CustomMessage($atts, $content = null) // Demo Heading H2 shortcode, all
 {
 
     return "<div class='col-xs-12 text-center'><div class='CustomMessage'>{$content}</div></div>";
+}
+function ImageContainer($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
+{
+
+    return "<div class='ImageContainer'>".do_shortcode($content)."</div>";
+}
+function ImageThird($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
+{
+
+    return "<div class='Image--Third'>".do_shortcode($content)."</div>";
 }
 
 
